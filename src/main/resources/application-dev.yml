@@ -1,0 +1,35 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        default_schema: public
+        temp:
+          use_jdbc_metadata_default: false
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/covid_info
+    username: postgres
+    password: 5278
+    hikari:
+      idle-timeout: 10000
+      maximum-pool-size: 5
+
+  messages:
+    basename: bundles/apiLanguageBundle
+
+logging:
+  level:
+    root: INFO
+  file: info-covid.log
+
+covid:
+  api: api.covid19tracking.narrativa.com

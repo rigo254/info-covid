@@ -1,0 +1,40 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    show-sql: false
+    hibernate:
+      default_schema: public
+      ddl-auto: update
+    properties:
+      hibernate:
+        order_inserts: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 50
+          lob:
+            non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://ec2-3-227-195-74.compute-1.amazonaws.com:5432/d4c1knqsdhgjpp?user=owgeabonrxxbir&password=c7dc5051cd122e5f868d3f6e01907fd3aaf678a0714ee57113580e6019f6e81d
+    driver-class-name: org.postgresql.Driver
+    username:
+    password:
+    hikari:
+      idle-timeout: 10000
+      maximum-pool-size: 5
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+  file: info-covid.log
+
+covid:
+  api: api.covid19tracking.narrativa.com
