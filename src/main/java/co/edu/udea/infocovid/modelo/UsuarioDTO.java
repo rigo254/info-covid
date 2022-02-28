@@ -1,6 +1,6 @@
 package co.edu.udea.infocovid.modelo;
 
-import co.edu.udea.arquitectura.entity.Ciudad;
+import co.edu.udea.infocovid.entity.Ciudad;
 
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;

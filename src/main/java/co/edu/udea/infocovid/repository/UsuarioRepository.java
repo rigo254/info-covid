@@ -1,6 +1,6 @@
 package co.edu.udea.infocovid.repository;
 
-import co.edu.udea.arquitectura.entity.Usuario;
+import co.edu.udea.infocovid.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

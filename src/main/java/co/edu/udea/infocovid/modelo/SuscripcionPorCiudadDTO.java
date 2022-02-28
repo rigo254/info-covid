@@ -1,7 +1,7 @@
 package co.edu.udea.infocovid.modelo;
 
-import co.edu.udea.arquitectura.entity.Ciudad;
-import co.edu.udea.arquitectura.entity.Suscripcion;
+import co.edu.udea.infocovid.entity.Ciudad;
+import co.edu.udea.infocovid.entity.Suscripcion;
 
 import javax.validation.constraints.NotNull;
 

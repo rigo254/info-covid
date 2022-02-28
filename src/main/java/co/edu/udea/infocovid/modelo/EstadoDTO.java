@@ -12,7 +12,7 @@ public class EstadoDTO {
     private Boolean habilitado;
     @NotNull
     private Long fkPais;
-    private co.edu.udea.arquitectura.modelo.PaisDTO pais;
+    private PaisDTO pais;
 
     public Long getId() {
         return id;
@@ -54,11 +54,11 @@ public class EstadoDTO {
         this.fkPais = fkPais;
     }
 
-    public co.edu.udea.arquitectura.modelo.PaisDTO getPais() {
+    public PaisDTO getPais() {
         return pais;
     }
 
-    public void setPais(co.edu.udea.arquitectura.modelo.PaisDTO pais) {
+    public void setPais(PaisDTO pais) {
         this.pais = pais;
     }
 }
